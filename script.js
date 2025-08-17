@@ -42,7 +42,7 @@ if (toggle && menu) {
 // -------------------------
 function setDarkMode(enabled) {
   if (enabled) {
-    document.body.classList.add("dark");
+    document.body.classList.remove("dark");
     darkModeToggle.textContent = "☀️"; // Switch icon
     localStorage.setItem("theme", "dark");
   } else {
