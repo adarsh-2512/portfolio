@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shetty Adarsh | Portfolio</title>
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="nav" role="navigation" aria-label="Primary">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#">Shetty Adarsh</a>
+
+      <!-- Hamburger button -->
+      <button class="nav__toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="nav-menu"
+              aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Menu -->
+      <ul id="nav-menu" class="nav__menu" data-open="false">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- Dark Mode Button -->
+      <li>
+        <button id="darkModeToggle" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+  <div class="hero__container">
+    <!-- Profile Image -->
+    <div class="hero__image">
+      <img src="assets/profile.jpg" alt="Shetty Adarsh" loading="lazy">
+    </div>
+
+    <!-- Text Content -->
+    <div class="hero__text">
+      <h1>Hello, I'm <span>Shetty Adarsh</span></h1>
+      
+      <!-- Animated role -->
+      <h2 class="animated-role">
+        <span id="role-text"></span>
+      </h2>
+
+      <!-- Short description -->
+      <p>
+        Passionate about crafting efficient software solutions and exploring the power of AI & ML.
+        Always eager to learn, build, and innovate in technology.
+      </p>
+
+      <!-- Social icons -->
+      <div class="hero__socials">
+        <!-- GitHub -->
+        <a href="https://github.com/adarsh-2512" target="_blank" aria-label="GitHub Profile">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub Logo">
+        </a>
+
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/shetty-adarsh-156480285/" target="_blank" aria-label="LinkedIn Profile">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about section">
+  <div class="container about__container">
+    <h2 class="section__title">About Me</h2>
+
+    <div class="about__content">
+      <p>
+        Hi, I’m <strong>Shetty Adarsh</strong> 👋<br>
+        A <span class="highlight">Computer Science and Engineering Graduate</span> from 
+        <strong>Mangalore Institute of Technology & Engineering (2021 – 2025)</strong>, 
+        with a CGPA of <strong>8.8</strong>.  
+        I have hands-on experience in <strong>Software Development, Data Science, and Machine Learning</strong>.  
+        Skilled in <strong>Java, Python, and full-stack technologies</strong>, I enjoy solving real-world 
+        problems and building impactful solutions.
+      </p>
+
+      <p>
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" 
+       alt="Gmail" class="email-icon">
+  Reach me at: 
+  <a href="mailto:adarshsubhashshetty937@gmail.com">adarshsubhashshetty937@gmail.com</a>
+</p>
+
+
+      <!-- Resume Button -->
+      <a href="assets/Shetty_Adarsh_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills section">
+  <div class="container">
+    <h2 class="section__title">Skills</h2>
+
+    <div class="skills__layout">
+
+  <!-- Left Column -->
+  <div class="skills__column">
+    <!-- Programming Languages -->
+    <div class="skill__card">
+      <h3>Programming Languages</h3>
+      <div class="skills__icons">
+        <div title="Python"><i class="devicon-python-plain colored"></i></div>
+        <div title="Java"><i class="devicon-java-plain colored"></i></div>
+        <div title="C++"><i class="devicon-cplusplus-plain colored"></i></div>
+      </div>
+    </div>
+
+    <!-- Web Technologies -->
+    <div class="skill__card">
+      <h3>Web Technologies</h3>
+      <div class="skills__icons">
+        <div title="HTML5"><i class="devicon-html5-plain colored"></i></div>
+        <div title="CSS3"><i class="devicon-css3-plain colored"></i></div>
+        <div title="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
+        <div title="Node.js">
+          <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js" class="skill-logo">
+        </div>
+        <div title="Spring Boot"><i class="devicon-spring-plain colored"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="skills__column">
+    <!-- Databases -->
+    <div class="skill__card">
+      <h3>Databases</h3>
+      <div class="skills__icons">
+        <div title="MySQL"><i class="devicon-mysql-plain colored"></i></div>
+        <div title="MongoDB"><i class="devicon-mongodb-plain colored"></i></div>
+      </div>
+    </div>
+
+    <!-- Tools & Platforms -->
+    <div class="skill__card">
+      <h3>Tools & Platforms</h3>
+      <div class="skills__icons">
+        <div title="Git"><i class="devicon-git-plain colored"></i></div>
+        <div title="GitHub"><i class="devicon-github-original"></i></div>
+        <div title="VS Code"><i class="devicon-vscode-plain colored"></i></div>
+        <div title="IntelliJ IDEA">
+          <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg" alt="IntelliJ IDEA" class="skill-logo">
+        </div>
+        <div title="Jupyter"><i class="devicon-jupyter-plain colored"></i></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+<section id="experience" class="experience">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="experience__layout">
+    <!-- Internship 1 -->
+    <div class="experience__card">
+      <h3>Digital Twin Research Intern</h3>
+      <p class="company">National Institute of Technology Karnataka (IT Department), Surathkal, Mangalore, India</p>
+      <p class="duration">Feb 2025 – May 2025</p>
+      <ul class="desc">
+        <li>Worked on how to use and implement IoT Components like (ESP-8266, SW-420, GPS NEO-6M) in the field of Digital Twin.</li>
+        <li>Integrated IOT components to Unity Software to replicate the Car Movement and detect Car crash.</li>
+      </ul>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="experience__layout">
+    <!-- Internship 1 -->
+    <div class="experience__card">
+      <h3>Data Science & Machine Learning Intern</h3>
+      <p class="company">CodeLab Systems, Mangalore, India</p>
+      <p class="duration">Nov 2023 – Dec 2023</p>
+      <ul class="desc">
+        <li>Worked on real-world ML problems using Python, NumPy, Pandas, Matplotlib, Seaborn, and Scikit-Learn.</li>
+        <li>Developed interactive dashboards with Streamlit for data visualization.</li>
+      </ul>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects__layout">
+    <!-- Project 1 -->
+    <div class="project__card">
+      <img src="assets/Two.png" alt="Project 1" class="project__image">
+      <h3>CompileX - Online Code Compiler & Executor</h3>
+      <p class="desc">
+        CompileX is a web-based online code compiler built with Spring Boot (backend) and HTML/CSS/JS (frontend), with APIs tested in Postman.
+      </p>
+      <a href="https://github.com/adarsh-2512/CompileX" 
+         target="_blank" 
+         class="btn project-btn">View on GitHub</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project__card">
+      <img src="assets/One.png" alt="Project 2" class="project__image">
+      <h3>AutoDeal - Pre-owned Car Marketplace</h3>
+      <p class="desc">
+        A full-stack web app for buying and selling used cars.  
+        Built using HTML, CSS, JavaScript, Node.js, and MongoDB.
+      </p>
+      <a href="https://github.com/adarsh-2512/AutoDeal" 
+         target="_blank" 
+         class="btn project-btn">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="certificates">
+  <h2 class="section-title">Certificates</h2>
+
+  <div class="certificates__list">
+
+    <!-- Certificate 1 -->
+    <div class="certificate__card">
+      <h3>Salesforce Developer Virtual Internship</h3>
+      <p class="cert-desc">Completed virtual internship at <strong>SmartInternz</strong>, gaining hands-on experience with Salesforce fundamentals, Apex, automation, and Lightning Web Components.</p>
+      <a href="https://smartinternz.com/internships/salesforce_certificates/b235c963d8e261c22906f8f652509aa1" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certificate__card">
+      <h3>Java Full Stack Development</h3>
+      <p class="cert-desc">Successfully completed <strong>Wipro TalentNext</strong> course on Java Full Stack, covering frontend, backend, and database development.</p>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7250540384043343873/" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="certificate__card">
+      <h3>Google Cybersecurity Professional Certificate</h3>
+      <p class="cert-desc">Earned from <strong>Coursera</strong>, demonstrating knowledge of cybersecurity fundamentals, tools, and practices to protect systems and networks.</p>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/LG7F2PX8VHMT" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <form action="https://formspree.io/f/xovlzejz" method="POST" class="contact__form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+
+  <!-- Social / Email Section -->
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/shetty-adarsh-156480285/" target="_blank" aria-label="LinkedIn Profile">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" class="contact-icon">
+    </a>
+
+    <a href="mailto:adarshsubhashshetty937@gmail.com" aria-label="Email">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail Logo" class="contact-icon">
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><strong>© 2025 Shetty Adarsh. Built with using HTML, CSS, and JavaScript.</strong></p>
+</footer>
+
+
+  <!-- filler to test scrolling -->
+  <!-- <main style="height: 200vh; padding-top: 80px;"></main> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
