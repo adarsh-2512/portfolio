@@ -42,27 +42,24 @@ if (toggle && menu) {
 // -------------------------
 function setDarkMode(enabled) {
   if (enabled) {
-    document.body.classList.remove("dark");
-    darkModeToggle.textContent = "☀️"; // Switch icon
+    document.body.classList.add("dark");  // ✅ add class
+    darkModeToggle.textContent = "☀️";   // Light mode icon
     localStorage.setItem("theme", "dark");
   } else {
-    document.body.classList.remove("dark");
-    darkModeToggle.textContent = "🌙"; // Switch icon
+    document.body.classList.remove("dark"); // ✅ remove class
+    darkModeToggle.textContent = "🌙";     // Dark mode icon
     localStorage.setItem("theme", "light");
   }
 }
 
-// On page load → Apply saved preference OR system default
+// On page load → Apply saved preference
 const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
   setDarkMode(true);
-} else if (savedTheme === "light") {
-  setDarkMode(false);
 } else {
-  // No saved choice → match system preference
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  setDarkMode(prefersDark);
+  // Default is light mode
+  setDarkMode(false);
 }
 
 // Toggle when user clicks button
@@ -70,6 +67,7 @@ darkModeToggle.addEventListener("click", () => {
   const isDark = document.body.classList.contains("dark");
   setDarkMode(!isDark);
 });
+
 
 
 // -------------------------
